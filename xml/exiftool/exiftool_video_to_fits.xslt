@@ -411,6 +411,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 				<gpsDifferential>
 					<xsl:value-of select="exiftool/GPSDifferential[1]"/>
 				</gpsDifferential>
+
+				<!-- 360 deg projection type -->
+				<projectionType>
+					<xsl:value-of select="exiftool/ProjectionValue"/>
+				</projectionType>
 			</video>			
 		</metadata>
 	</fits>	
